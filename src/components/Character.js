@@ -14,16 +14,19 @@ const CharDiv = styled.div`
 `;
 
 const Character = (props) => {
+    
+    const char = props.char
+    console.log(char)
     return (
         <CharDiv>
-            <h1>Character Name: {props.name}</h1>
-            <p> Height: {props.height} centimeters tall</p>
-            <p> Mass: {props.mass} Kilograms</p>
-            <p> Gender: {props.gender}</p>
-            <p>Eye Color: {props.eye_color}</p>
-            <p>Hair Color: {props.hair_color}</p>
-            <p>Skin color: {props.skin_color}</p>
-            <p>Born in the Year {props.birth_year}</p>
+            <h1>Character Name: {char.name}</h1>
+            <p> Height: {char.height} centimeters tall</p>
+            <p> Mass: {char.mass} Kilograms</p>
+            <p> Gender: {char.gender}</p>
+            <p>Eye Color: {char.eye_color}</p>
+            <p>Hair Color: {char.hair_color}</p>
+            <p>Skin color: {char.skin_color}</p>
+            <p>Born in the Year {char.birth_year}</p>
         </CharDiv>
     );
 };
