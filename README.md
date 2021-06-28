@@ -81,6 +81,11 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+ReactJS is a javascrip library. It solves the problem of having to rerender the entire dom because of one elment or another, by using a virtual DOM and state we only render the changes we want to see. 
 1. Describe component state.
+State is the state of the current object. This will be any value we pass when we initialize or use the setState function to change
 1. Describe props.
+Properties are the what we pass to a component mostly we have been passing responses from the promise of an api call
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+side effects are anything that aren't directly related to the dom. 
+you can sync changes by passing a property to the end of the call. If you only want to render once you would pass [], if you want to render everytime a certain property or properties changes you would pass those at the end of the call. If you want any change to cause a render, nothing would be passed. 
