@@ -5,7 +5,7 @@ import axios from "axios";
 
 const CharDiv = styled.div`
   background-color: black;
-  padding: 0.25em 2em;
+  padding: 0.5em 4em;
   margin: 6em auto;
   width: 90%;
   text-align: left;
@@ -16,7 +16,7 @@ const CharDiv = styled.div`
 const Character = (props) => {
     
     const char = props.char
-    console.log(char)
+    //console.log(char)
     return (
         <CharDiv>
             <h1>Character Name: {char.name}</h1>
